@@ -13,7 +13,7 @@ main() {
   print(c);
  */
 
-  // Strings - Cadena de caracteres
+  // ======= Strings - Cadena de caracteres =======
 
   String student = 'Jose';
   String teacher = "Fernando" + " Herrera";
@@ -26,5 +26,13 @@ Aprendiendo ReactiveX !!
 Con el profesor $teacher''';
 
   print(message);
+
+  // Booleans
+
+  bool isActive = true;
+  bool isRunning = false;
+
+  print(isActive);
+  print(isRunning);
 
 }
