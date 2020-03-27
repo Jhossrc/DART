@@ -24,7 +24,12 @@ main() {
   int d = m ?? n ?? 100;
   print(d); // 100
 
-  // Operadores relacionales 
-  // Todos retornan un valor booleano
+  // Operador de tipo
+  int i = 10;
+  String j = '10';
+
+  print(i is int);  // true
+  print(j is int);  // false
+  print(j is! int); // true
   
 }
