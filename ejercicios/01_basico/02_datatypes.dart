@@ -35,7 +35,7 @@ Con el profesor $teacher''';
   print(isActive);
   print(isRunning);
 
-  // Listas
+  // ======= Listas =======
   var myList = ['Superman',100 , 'Batman',70 , true];  
   List<Object> otherList = ['Hello', 'World', 10]; 
 
@@ -60,6 +60,10 @@ Con el profesor $teacher''';
     villains..add('Thanos')
             ..add('Red Skull')
             ..add('Doom');
+
+  // Sets
+  Set<String> users = {'jossrc','dev12','redsky'};
+    users.add('jossrc'); // ignorado
 
 
 }
