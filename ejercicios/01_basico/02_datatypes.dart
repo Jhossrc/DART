@@ -15,7 +15,7 @@ main() {
 
   // ======= Strings - Cadena de caracteres =======
 
-  String student = 'Jose';
+ // String student = 'Jose';
   String teacher = "Fernando" + " Herrera";
   String director = 'O\'Connor';
 
@@ -61,9 +61,26 @@ Con el profesor $teacher''';
             ..add('Red Skull')
             ..add('Doom');
 
-  // Sets
+  // ======= Sets =======
   Set<String> users = {'jossrc','dev12','redsky'};
     users.add('jossrc'); // ignorado
 
+  // Mapas
+  Map<String, dynamic> student = {
+    'name'     : 'José',
+    'lastname' : 'Robles',
+    'email'    : 'joss@gmail.com',
+    'age'      : 21
+  };
+
+  print("Mi nombre es " + student['name'] + " y tengo " + student['age'].toString());
+
+  Map<String, dynamic> anotherStudent = new Map();
+    anotherStudent.addAll({
+      'name'     : 'Alex',
+      'lastName' : 'Lopez',
+      'email'    : 'alex@gmail.com',
+      'age'      : 18
+    });
 
 }
