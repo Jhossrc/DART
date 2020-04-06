@@ -1,14 +1,11 @@
 main(List<String> args) {
 
-  print('Inicio del Main');
-
   Future<String> timeout = Future.delayed( Duration(seconds: 3 ), (){
-    print('3 Segundos despues');
-    return 'Retorno del texto';
+    return 'Retorno del future despues de 3 segundos';
   });
 
-  timeout.then( (text)=> print(text) );
+  timeout.then((message) => print(message));
 
-  print('Fin del Main');
+  // Retorno del future despues de 3 segundos
 
 }
