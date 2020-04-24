@@ -1,10 +1,10 @@
 class People {
   // Campos o propiedades
-  String name;
-  int age;
-  String bio;
+  String _name;
+  int _age;
+  String _bio;
 
   // Metodos
   @override
-  String toString() => '$name $age $bio';
+  String toString() => '$_name $_age $_bio';
 }
