@@ -1,36 +1,14 @@
-main(List<String> args) {
+import 'clases/People.dart';
+
+main() {
  
-  People p1 = new People();
-  var p2 = new People();
-  final p3 = new People();
+  final p1 = new People();
 
-  p1.name = 'José';
-  p1.age = 21;
-  p1.bio = 'Soy de Perú';
-  print(p1); // Instance of 'People'
-  //print(p1.toString());
+  p1..name = 'Jose'
+    ..age  = 21
+    ..bio  = 'soy de Perú';
 
-  // Todos heredan del objeto Global Object
-  // Al ser heredades se pueden sobreescribir
+  print(p1);
 }
 
-
-class People {
-  // Campos o propiedades
-  String name;
-  int age;
-  String bio;
-
-  // Get y sets
-
-  // Constructores
-
-  // Métodos
-  //@override // Opcional -> Es un decorador que le dice a Dart que debe sobreescribir el metodo toString del padre (proviene de Object)
-  /* String toString() {
-    return '$name $age $bio';
-  } */
-  @override
-  String toString() => '$name $age $bio';
-}
 
