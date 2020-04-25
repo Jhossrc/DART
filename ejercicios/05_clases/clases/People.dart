@@ -1,20 +1,16 @@
 class People {
   /* Campos o propiedades */
-  String name;
-  int age;
-  String bio;
+  String _name;
+  int _age;
+  String _bio;
 
-/* 
-  /* Get y sets */
-  String get name{
-    return _name;
-  } // Como función
+  String get name => _name;
 
   set name(String name){
     _name = name;
   }
 
-  int get age => _age; // Función de flecha
+  int get age => _age;
 
   set age(int age){
     _age = age;
@@ -26,13 +22,18 @@ class People {
 
   set bio(String bio){
     _bio = bio;
-  } */
+  }
 
-  People({
-    this.name,
-    this.age,
-    this.bio
- });
+  People({String name, int age, String bio}){
+    this.name = name;
+    this.age  = age;
+    this.bio  = bio;
+  }
+
+ People.people18(String name, {String bio = '<Sin Bio>'}){
+   this.name = name;
+   this.age  = 18;
+ }
 
   /* Metodos */
   @override
