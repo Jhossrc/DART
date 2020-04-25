@@ -2,14 +2,9 @@ import 'clases/People.dart';
 
 void main() {
  
-  final p1 = new People(); 
+  final p1 = new People(name: 'Jose',age: 21, bio: 'soy de Perú'); 
 
-  p1..name = 'José'
-    ..age  = 21
-    ..bio  = 'soy de Perú';
-
-
-  print('Mi nombre es ' + p1.name + ' y ' + p1.bio);
+  print(p1.bio); // Soy de Perú
 }
 
 
