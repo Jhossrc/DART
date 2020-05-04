@@ -32,10 +32,8 @@ main() {
   print('round : ${number.round()} :: $number');
   // round : 3 :: 3.1416
 
-  // Retorna un número que se encuentre en el rango que sea menor o igual número. Si es menor a 0 el izquierdo
+  // clamp() : Retorna un número que se encuentre en el rango que sea menor o igual número. Si es menor a 0 el izquierdo
   print('clamp : ${number.clamp(1, 2)} :: $number');
   // clamp : 2 :: 3.1416
-
-
 
 }
