@@ -1,5 +1,7 @@
-import 'package:countries/countries.dart' as countries;
+import 'package:countries/packages.dart' as package;
 
 void main(List<String> arguments) {
-  print('Hello world: ${countries.calculate()}!');
+  
+  package.getData();
+
 }
